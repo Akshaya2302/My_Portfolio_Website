@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration_form.css">
+  </head>
+  <body>
+    <header>University Registration Form</header>
+    <main>
+      <h2>Enter Your Details Correctly</h2>
+      <form>
+        <fieldset>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div>
+            <label for="name">Enter Your Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="username"
+              placeholder="Enter Your Full Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="useremail">Enter Your Email:</label>
+            <input
+              type="email"
+              id="useremail"
+              name="useremail"
+              placeholder="Enter Your Email@.com"
+              required
+            />
+          </div>
+          <div>
+            <label for="usernumber">Enter Your Contact number:</label>
+            <input
+              type="tel"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              id="usernumber"
+              name="usernumber"
+              placeholder="Enter Your Contact"
+            />
+          </div>
+          <div>
+            <label for="dob">Date of Birth:</label>
+            <input
+              type="date"
+              name="DateofBirth"
+              id="dob"
+              placeholder="Enter your date of birth"
+            />
+          </div>
+          <div>
+            <label id="gender">Select Your Gender:</label>
+            <br />
+            <input type="radio" id="male" name="Gender" />
+            <label for="male">Male</label>
+            <br />
+            <input type="radio" id="female" name="Gender" />
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <label for="profile-pic">Upload your profile photo</label>
+            <input
+              type="file"
+              id="profile-pic"
+              name="profile photo"
+              accept="image/*"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><h4>Academic Details</h4></legend>
+          <div>
+            <label for="course">Select Your course..</label>
+            <select id="course">
+              <option value="selected">selected..</option>
+              <option value="btech">Bachelor of Technology(B.Tech)</option>
+              <option value="bcom">Bachelor of Commerce</option>
+              <option value="bca">Bachelor of computer applications</option>
+              <option value="bba">Bachelor of Business</option>
+            </select>
+            <h4>Year of study</h4>
+            <label for="year">Select Your year</label>
+            <select id="year">
+              <option value="selected">selected..</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+            </select>
+          </div>
+          <div>
+            <label for="collegename">Enter your college name:</label>
+            <input
+              type="text"
+              name="collegename"
+              id="collegename"
+              placeholder="Your College Name"
+            />
+          </div>
+          <div>
+            <label for="rollnumber">Enter your Roll number:</label>
+            <input type="text" id="rollnumber" name="rollnumber" />
+          </div>
+        </fieldset>
+          <fieldset>
+            <legend>Contact Details</legend>
+          <div>
+            <label for="address">Enter your address:</label>
+            <br />
+            <textarea
+              name="address"
+              id="address"
+              rows="10"
+            ></textarea>
+          </div>
+          <div>
+            <label for="city">Enter your city:</label>
+            <input type="text" id="city" name="city" />
+            <label for="state">Select Your state</label>
+            <select id="state">
+              <option value="selected">selected..</option>
+              <option value="karnataka">Karnataka</option>
+              <option value="andhrapradesh">Andhrapradesh</option>
+              <option value="tamilnadu">Tamil-Nadu</option>
+              <option value="kerala">Kerala</option>
+            </select>
+          </div>
+          <div>
+            <label for="pincode">Enter your pincode:</label>
+            <input
+            type="number"
+            id="pincode"
+            name="pincode"
+            placeholder="enter your pincode"
+            />
+          </div>
+        </fieldset>
+          <div>
+            <label for="skills">Check your skills</label>
+            <input
+              type="checkbox"
+              id="skill-python"
+              name="skills"
+              value="python"
+            />
+            <label for="skill-python">Python</label>
+            <input type="checkbox" id="skill-java" name="skills" value="java" />
+            <label for="skill-java">Java</label>
+            <input type="checkbox" id="skill-html" name="skills" value="html" />
+            <label for="skill-html">HTML5</label>
+            <input type="checkbox" id="skill-css" name="skills" value="css" />
+            <label for="skill-css">CSS3</label>
+            <input
+              type="checkbox"
+              id="skill-javascript"
+              name="skills"
+              value="javascript"
+            />
+            <label for="skill-java">Javascript</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">I agree to the Terms and Conditions</label>
+          </div>
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </fieldset>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

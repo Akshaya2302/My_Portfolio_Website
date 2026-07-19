@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 8px;
+}
+.navlinks {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  background-color: azure;
+  padding: 15px;
+  gap: 10px;
+}
+button {
+  padding: 20px;
+  background-color: brown;
+  color: white;
+  border-radius: 10px;
+}
+h2 {
+  font-size: 50px;
+}
